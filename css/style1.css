@@ -96,6 +96,7 @@ aside{
 }
  header {
     display:inline;
+    color: aliceblue;
  }
 
  @media screen and (max-width:1000px) {
