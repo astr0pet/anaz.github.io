@@ -1,1 +1,45 @@
-currently working on it
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+
+<div class="register-container">
+    <h2>Silahkan isi datta</h2>
+    <form id="registerForm">
+        <input type="text" placeholder="Nama Depan" name="firstName" required>
+        <input type="text" placeholder="Nama Tengah" name="middleName">
+        <input type="text" placeholder="Nama Belakang" name="lastName" required>
+        
+        <label for="dob">Tanggal Lahir:</label>
+        <input type="date" name="dob" required>
+
+        <label for="gender">Jenis Kelamin:</label>
+        <select name="gender" required>
+            <option value="">-- Pilih --</optio n>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select>
+
+        <input type="email" placeholder="Email" name="email" required>
+        <input type="tel" placeholder="Nomor HP" name="phone" required>
+        <input type="password" placeholder="Password" name="password" required>
+        
+        <button type="submit">Daftar</button>
+        <p class="back-link">Sudah punya akun? <a href="../pages/login.html">Masuk</a></p>
+    </form>
+</div>
+
+<script>
+    document.getElementById("registerForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("Registrasi berhasil!");
+    });
+</script>
+
+</body>
+</html>
